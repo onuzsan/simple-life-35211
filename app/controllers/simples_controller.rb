@@ -3,3 +3,7 @@ class SimplesController < ApplicationController
     
   end
 end
+
+def new
+  
+end

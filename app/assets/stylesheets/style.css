@@ -1,65 +1,4 @@
 
-
-
-/* 
-   
-  body {
-    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-    color: #3b4043;
-  }
-  
-
-grid-temp
-.header {
-  background-color: #f1f8fe;
-  margin-bottom: 48px;
-  padding: 20px 0;
-
-}
-.inner {
-  width: 1024px;
-  margin: 0 auto;
-}
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-} */
-/* .logo {
-  width: 200px;
-} */
-/* .nav__btn{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #87CEFA solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-}
-.nav__btn:hover{
-  color: #fff;
-  background: #87CEFA;
-}
-
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-}
-.nav__logout:hover{
-  opacity: 0.5;
-}
-
-
-
- 
-
   
     /* 動画部分 */
     .wrap-video{
@@ -69,6 +8,7 @@ grid-temp
 .wrap-video video{
   width: 100%;
   height:100%
+  
 }
 
 .wrap-video .text{
@@ -84,17 +24,18 @@ grid-temp
 
 
 .wrap-video .text p{
-  font-family: "Avenir Next", "Avenir", sans-serif;
   color: white
 }
 
 .wrap-video .text .headline{
   font-size:30px;
     text-shadow: 0 4px 4px;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+   
 } 
 /* 動画部分 */
 
+
+/* ハンバーガーメニュー部分 */
 /*
  * Made by Erik Terwan
  * 24th of November 2015
@@ -112,7 +53,7 @@ grid-temp
    padding: 0;
    
    /* make it look decent enough */
-   background: #232323;
+   background: #ebeced;
    color: #cdcdcd;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
@@ -258,3 +199,8 @@ grid-temp
  {
    transform: none;
  }
+ /* ハンバーガーメニュー部分 */
+
+  
+
+
