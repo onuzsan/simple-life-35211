@@ -5,9 +5,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="https://js.pay.jp/v1/"></script>
+  <%= stylesheet_link_tag 'application', media: 'all'%>
+  <%= javascript_pack_tag 'application' %>
   </head>
 
 
@@ -16,9 +16,37 @@
     
     <%= yield %>
      <footer>
-      <p>
-        Copyright simple life 2021.
-      </p>
+     <div class='footer'>
+  <div class='footer-contents'>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'></h2>
+      <ul>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'> </h2>
+      <ul>
+        <li> <%= link_to image_tag("facebook.png"), "https://www.facebook.com/" %></li>
+        <li> <%= link_to image_tag("instagrm.png"), "https://www.instagram.com "%></li>
+        <li> <%= link_to image_tag("twetter.png"), "https://twitter.com/" %></li>
+      </ul>
+    </div>
+    <div class='furima-details'>
+      <h2 class='footer-content-head'></h2>
+      <ul>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+        <li><%= link_to '', "#", class: "footer-link" %></li>
+      </ul>
+    </div>
+  </div>
+  <%= link_to image_tag("", class:"logo-white"), "#" %>
+  <p>© Simple Life co</p>
+</div>
     </footer>
   </body>
 </html>

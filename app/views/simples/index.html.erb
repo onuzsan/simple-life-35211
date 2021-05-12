@@ -36,7 +36,7 @@
      <li><%= link_to 'Sign Up', new_user_registration_path, class: "sign-up" %></li>
       <% end %>
       <a href="#"><li>What’s New</li></a>
-     <li><%= link_to 'Blogs',new_simple_path , class: "login" %></li>
+     <li><%= link_to ' Column',new_simple_path , class: "login" %></li>
       <a href=""><li>Links</li></a>
     </ul>
   </div>
@@ -45,45 +45,43 @@
 
   <div class="text">
     <p>full screen video !</p>
-    <p class="headline">Simple LIFe??</p>
+    <p class="headline">Simple LIFeのすすめ</p>
   </div>
   
   <%= video_tag("/videos/record.mp4", autoplay: :true, loop: :true,  muted: :true ) %> 
 
 </div>
+<%# 動画部分 %>
+ <div class='item-contents'>
+    <h2 class='title'></h2>
+    <%= link_to 'What’s New', "", class: "subtitle" %>
+    <ul class='item-lists'>
 
-
- <ul class='item-lists'>
-
-   <%# <% if  @items.present? %>  %>
-     <%# <% @items.each do |item| %> %>
+   
+     <% @simple.each do |simple| %>
       <li class='list'>
-        <%# <%= link_to item_path(item) do %> %>
+        <%= link_to simple_path(simple) do %>
         <div class='item-img-content'>
-          <%# <%= image_tag , class: "item-img" %> %>
-
-          <%# <% if item.order %>  %>
-          <div class='sold-out'>
-           <span>Sold Out!!</span> 
-          </div> 
-           <%# <%  end %>  %>
+          <%= image_tag simple.image, class: "item-img" %>
 
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%# <%= .title %> %>
+            <%= simple.title %>
           </h3>
           <div class='item-price'>
-            <%# <span><%= .price%>円<br>
-            <%# <%= .shipping.name %></span> %> %>
+            <%# <span><%= item.price%><br><%=  %></span> 
             <div class='star-btn'>
-            
-              <span class='star-count'>0</span>
+              <%= image_tag "", class:"star-icon" %>
+              <span class='star-count'></span>
             </div>
           </div>
         </div>
-         <%# <% end %> %>
+         <% end %>
         </li>
-     
+      <% end %>
 
- </ul>
+      
+    </ul>
+  </div>
+</div>

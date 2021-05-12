@@ -4,8 +4,8 @@
 
   </header>
   <div class="items-sell-main">
-    <h2 class="items-sell-title">Blogs</h2>
-    <%= form_with local: true do |f| %>
+    <h2 class="items-sell-title"> Column</h2>
+    <%= form_with model: @simple ,method: :post,  local: true do |f| %>
 
     <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
     <%# render 'shared/error_messages', model: f.object %>
@@ -21,7 +21,7 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :hoge, id:"item-image" %>
+        <%= f.file_field :image, id:"simple-image" %>
       </div>
     </div>
     <%# /商品画像 %>
@@ -34,19 +34,12 @@
       <%= f.text_area :title, class:"items-text", id:"item-name", placeholder:"Title Here", maxlength:"40" %>
       <div class="items-explain">
         <div class="weight-bold-text">
-          商品の説明
+          Mind Set
         
         </div>
-        <%= f.text_area :sentense, class:"items-text", id:"item-info", placeholder:"" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :sentense, class:"items-text", id:"item-info", placeholder:"A person who lives with the minimum necessary items by reducing his belongings as much as possible. It is a newly born lifestyle in the modern society of mass production and mass consumption, with the idea that you can live affluently by having only what you really need. A coined word derived from minimal, which means 'minimal.'" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
-    <%# /商品名と商品説明 %>
-
-   
-
-   
-
-  
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
       <%= f.submit "Complete" ,class:"sell-btn" %>
@@ -55,7 +48,7 @@
     <%# /下部ボタン %>
   </div>
   <% end %>
-
+ 
  
   </footer>
 </div>
