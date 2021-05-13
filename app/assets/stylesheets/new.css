@@ -3,13 +3,13 @@
 
 
 .items-sell-contents {
-  background-color: #e9e1e1;
+  background-color: #ebeced;
   font-family:  "Avenir Next", "Avenir", sans-serif;
   font-size: 20px;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
-  /* height: 800px; */
+  padding: 20%;
+  
  
 }
 

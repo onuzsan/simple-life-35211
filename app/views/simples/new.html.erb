@@ -18,12 +18,13 @@
         
       </div>
       <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
-        <%= f.file_field :image, id:"simple-image" %>
+      
       </div>
     </div>
+    <div class="weight-bold-text">
+        
+        </div>
+     
     <%# /商品画像 %>
     <%# 商品名と商品説明 %>
     <div class="new-items">
@@ -39,6 +40,13 @@
         </div>
         <%= f.text_area :sentense, class:"items-text", id:"item-info", placeholder:"A person who lives with the minimum necessary items by reducing his belongings as much as possible. It is a newly born lifestyle in the modern society of mass production and mass consumption, with the idea that you can live affluently by having only what you really need. A coined word derived from minimal, which means 'minimal.'" ,rows:"7" ,maxlength:"1000" %>
       </div>
+        <p>
+          
+        </p>
+        <%= f.file_field :image, id:"simple-image" %>
+          
+          <span class="indispensable"></span>
+             <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
     </div>
     <%# 下部ボタン %>
     <div class="sell-btn-contents">

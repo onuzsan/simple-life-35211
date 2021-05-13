@@ -3,11 +3,13 @@
     /* 動画部分 */
     .wrap-video{
   position:relative;
+  
       } 
 
 .wrap-video video{
   width: 100%;
   height:100%
+  
   
 }
 
@@ -19,8 +21,8 @@
   transform: translate(-50%, -50%); 
   text-align:center;
   text-transform:uppercase
+  
 }
-
 
 
 .wrap-video .text p{
@@ -201,6 +203,26 @@
  }
  /* ハンバーガーメニュー部分 */
 
-  
+ #index_messageBox {
+   padding-top: 40px; 
+  display: flex;
+  /* display: -webkit-flex; */
+  /* flex-wrap: wrap; */
+  /* -webkit-flex-wrap: wrap; */
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+ }
+ 
+ .messageBox{
+   width: 40%;
+ } 
 
 
+  .message{
+ font-size: 14px;
+ font-weight: normal;
+ color: rgb(85, 85, 85);
+ line-height: 1.9em;
+ letter-spacing: 0.2px;
+ font-feature-settings: "palt";
+  }

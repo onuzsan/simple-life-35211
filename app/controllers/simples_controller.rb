@@ -26,6 +26,6 @@ def create
    private
 
    def simple_params
-     params.require(:simple).permit(:image, :title, :sentense).merge(user_id: current_user.id)
+     params.require(:simple).permit(:image, :title, :sentense,:category_id).merge(user_id: current_user.id)
    end
  end
