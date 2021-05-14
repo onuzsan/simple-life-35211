@@ -1,7 +1,7 @@
 /* 商品の概要 */
 
 .item-show {
-  background-color: #fcfaf9;
+  /* background-color: #fcfaf9; */
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .item-box {
-  background-color: #f5ece3;
+  /* background-color: #f5ece3; */
   width: 70vw;
   min-width: 1200px;
   padding: 10vh 15vw;
@@ -23,6 +23,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 25px;
+  color: #2d2d2d;;
 }
 
 .item-box-img {
@@ -77,6 +78,7 @@
   font-size: 18px;
   margin: 40px 0px;
   overflow-wrap: anywhere;
+  color: #2d2d2d;
 }
 
 .detail-table {

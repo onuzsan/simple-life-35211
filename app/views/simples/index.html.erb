@@ -43,11 +43,11 @@
 </nav>
 
 
-  <div class="text">
+  <%# <div class="text">
     <p>full screen video !</p>
     <p class="headline">Simple LIFeのすすめ</p>
   </div>
-  
+   %>
   <%= video_tag("/videos/record.mp4", autoplay: :true, loop: :true,  muted: :true ) %> 
 
 </div>
@@ -60,13 +60,20 @@
 <div class="messageBox">
 <p class="message"> 
 <br>
-  英語圏ではハイタッチのことを「ハイファイブ」と言います。お客さまと二人三脚で進める家づくり。最後は笑顔でハイファイブできるように･･･そんな願いを社名に込めました。
+　　ミニマムライフ　シンプルライフ  
+<br>
+ <br>
+<br>
+　　憧れはあるけど、自分には無理、ストイックな人がやること 
+<br>
+ <br>
+<br>
+　　彼ら、彼女らの考えを覗いてみると世界が変わるかも
 <br>
 <br>
-ヒアリングも設計も施工管理も、マイホームが完成するまでの間ずっと私たちが責任を持って対応します。品質を保つため、1年間に手がけるのは8棟まで。それ以上は建てません。
 <br>
-<br>
-重視するのは、暮らしやすさと美しいデザインの共存。住むほどに愛着が深まる家を、私たちと一緒につくりませんか？
+<%# 重視するのは、暮らしやすさと美しいデザインの共存。 %>
+　　シンプルライフのすすめ方  ここで触れてみませんか？
 </p>
 </div>
 <div class="illustBox">
@@ -94,7 +101,7 @@
       <li class='list'>
         <%= link_to simple_path(simple) do %>
         <div class='item-img-content'>
-          <%= image_tag simple.image, class: "item-img" %>
+          <%= image_tag simple.image, class: "item-img" %> 
 
         </div>
         <div class='item-info'>
@@ -112,8 +119,102 @@
          <% end %>
         </li>
       <% end %>
-
       
     </ul>
   </div>
 </div>
+
+<div class='item-contents'>
+    <h2 class='title'></h2>
+    <%= link_to 'Category', "", class: "subtitle" %>
+    <div class="main">
+      <div class="left-content">
+      <div class='item-img-content'>
+          <%= image_tag "hana.jpg", class: "item-img" %>
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+           <%= link_to 'マインド', "", class: "left-image" %>
+          </h3>
+          <div class='item-price'>
+            <div class='star-btn'>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+       <div class='item-img-content'>
+          <%= image_tag "hana.jpg", class: "item-img" %>
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+           <%= link_to 'ライフスタイル', "", class: "subtitle" %>
+          </h3>
+          <div class='item-price'>
+           
+            <div class='star-btn'>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+       <div class='item-img-content'>
+          <%= image_tag "hana.jpg", class: "item-img" %>
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+           <%= link_to '本', "", class: "subtitle" %>
+          </h3>
+          <div class='item-price'>
+           
+            <div class='star-btn'>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="right-content">
+       <div class='item-img-content'>
+          <%= image_tag "hana.jpg", class: "item-img" %>
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+           <%= link_to 'インテリア・家電', "", class: "subtitle" %>
+          </h3>
+          <div class='item-price'>
+            
+            <div class='star-btn'>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="right-content">
+       <div class='item-img-content'>
+          <%= image_tag "hana.jpg", class: "item-img" %>
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+           <%= link_to '音楽', "", class: "subtitle" %>
+          </h3>
+          <div class='item-price'>
+         
+            <div class='star-btn'>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+       </div>
+
+      
+    </div>
+      </div>
+       </div>
