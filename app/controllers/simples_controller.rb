@@ -1,6 +1,6 @@
 class SimplesController < ApplicationController
   def index
-    @simple = Simple.all
+    @simple = Simple.all.order("created_at DESC")
   end
 
 
