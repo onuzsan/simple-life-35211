@@ -6,7 +6,7 @@ class Simple < ApplicationRecord
   has_many :comments 
 end
 with_options presence: true do
-  validates :image
+   validates :image
   validates :title
   validates :sentense
   validates :category_id

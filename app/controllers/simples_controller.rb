@@ -22,6 +22,8 @@ def create
 
   def show
     @simple= Simple.find(params[:id])
+    @comment = Comment.new
+    @comments = @simple.comments.includes(:user)
   end
    private
 
