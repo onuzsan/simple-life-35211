@@ -25,6 +25,10 @@ def create
     @comment = Comment.new
     @comments = @simple.comments.includes(:user)
   end
+  def category
+    @item = Simple.find_by(category_id: params[:id])
+    @items = Simple.where(category_id: params[:id]).order('created_at DESC')
+  end
    private
 
    def simple_params

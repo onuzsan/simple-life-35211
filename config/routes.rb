@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :simples do
     resources :comments, only: :create
   end
+  get '/simples/category/:id', to: "simples#category"
 end
