@@ -1,0 +1,35 @@
+
+
+ <div class='item-contents'>
+    <h2 class='title'></h2>
+   <%= @item.category.name  %>
+    <ul class='item-lists'>
+
+   
+    <%= @items.each do |item| %>
+      <li class='list'>
+        <%= link_to simple_path do %>
+        <div class='item-img-content'>
+           <%= image_tag item.image, class: "item-img" %>
+ 
+
+        </div>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.title %>
+          </h3>
+          <div class='item-price'>
+            <%# <span><%= item.price%><br><%=  %></span> 
+            <div class='star-btn'>
+              <%= image_tag "", class:"star-icon" %>
+              <span class='star-count'></span>
+            </div>
+          </div>
+        </div>
+         <% end %>
+        </li>
+      <% end %>
+      
+    </ul>
+  </div>
+</div>

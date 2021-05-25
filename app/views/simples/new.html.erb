@@ -6,27 +6,16 @@
   <div class="items-sell-main">
     <h2 class="items-sell-title"> Column</h2>
     <%= form_with model: @simple ,method: :post,  local: true do |f| %>
-
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-    <%# render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
-
-    <%# 商品画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
-       
-        
       </div>
       <div class="click-upload">
-      
       </div>
+     </div>
+     <div class="weight-bold-text">
     </div>
-    <div class="weight-bold-text">
-        
-        </div>
      
-    <%# /商品画像 %>
-    <%# 商品名と商品説明 %>
+   
     <div class="new-items">
       <div class="weight-bold-text">
          Title
