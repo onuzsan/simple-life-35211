@@ -6,8 +6,8 @@ class Category < ActiveHash::Base
     { id: 4, name: '本' },
     { id: 5, name: 'インテリア・家電' },
     { id: 6, name: '音楽' },
-    { id: 7, name: 'その他'}
-   
+    { id: 7, name: 'その他' }
+
   ]
 
   include ActiveHash::Associations
