@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: simple_life_production
-  username: simple_life
-  password: <%= ENV['SIMPLE_LIFE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
